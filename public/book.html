@@ -35,72 +35,79 @@
     </div>
   </nav>
 
-  <div class="d-flex">
-    <!-- Kontynenty -->
-    <div class="flex-column">
-      <button id="btnKontynenty" class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-        Kontynenty
-      </button>
-      <div class="collapse" id="home-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small rekord">
-        </ul>
+  <!-- Sekcja formularza wyszukiwania -->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Kontynenty -->
+      <div class="col-12 col-md-2 mb-3">
+        <button id="btnKontynenty" class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+          Kontynenty
+        </button>
+        <div class="collapse" id="home-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small rekord">
+          </ul>
+        </div>
       </div>
-    </div>
-  
-    <!-- Kraje -->
-    <div class="flex-column">
-      <button id="btnKraje" class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="true">
-        Kraje
-      </button>
-      <div class="collapse" id="dashboard-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-        </ul>
+    
+      <!-- Kraje -->
+      <div class="col-12 col-md-2 mb-3">
+        <button id="btnKraje" class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="true">
+          Kraje
+        </button>
+        <div class="collapse" id="dashboard-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          </ul>
+        </div>
       </div>
-    </div>
-  
-    <!-- Miasta -->
-    <div class="flex-column">
-      <button id="btnMiasta" class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
-        Miasta
-      </button>
-      <div class="collapse" id="orders-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-        </ul>
+    
+      <!-- Miasta -->
+      <div class="col-12 col-md-2 mb-3">
+        <button id="btnMiasta" class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
+          Miasta
+        </button>
+        <div class="collapse" id="orders-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          </ul>
+        </div>
+      </div>
+
+      <!-- Liczba osób -->
+      <div class="col-12 col-md-2 mb-3">
+        <button id="btnLiczbaOsob" class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#people-collapse" aria-expanded="true">
+          Liczba osób
+        </button>
+        <div class="collapse" id="people-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          </ul>
+        </div>
+      </div>
+
+      <!-- Data rozpoczęcia pobytu -->
+      <div class="col-12 col-md-2 mb-3">
+        <label for="start">Data rozpoczęcia pobytu:</label>
+        <input type="date" id="start" name="trip-start" value="2024-01-01" min="2024-01-01" max="2024-12-31" class="form-control mb-3" />
+      </div>
+
+      <!-- Liczba dni pobytu -->
+      <div class="col-12 col-md-2 mb-3">
+        <label for="liczbaDniPobytu">Liczba dni pobytu:</label>
+        <input type="number" id="liczbaDniPobytu" name="liczbaDniPobytu" min="1" class="form-control mb-3" />
       </div>
     </div>
 
-    <!-- Liczba osób -->
-    <div class="flex-column">
-      <button id="btnLiczbaOsob" class="btn btn-toggle d-inline-flex align-items-center rounded border-0" data-bs-toggle="collapse" data-bs-target="#people-collapse" aria-expanded="true">
-        Liczba osób
-      </button>
-      <div class="collapse" id="people-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-        </ul>
+    <!-- Przycisk Wyszukaj -->
+    <div class="row">
+      <div class="col-12 text-center mb-3">
+        <button id="btnWyszukaj" class="btn btn-primary">Wyszukaj</button>
       </div>
-    </div>
-
-    <!-- Data rozpoczęcia pobytu -->
-    <div class="flex-column">
-      <label for="start">Data rozpoczęcia pobytu:</label>
-      <input type="date" id="start" name="trip-start" value="2024-01-01" min="2024-01-01" max="2024-12-31" class="form-control mb-3" />
-    </div>
-
-    <!-- Liczba dni pobytu -->
-    <div class="flex-column">
-      <label for="liczbaDniPobytu">Liczba dni pobytu:</label>
-      <input type="number" id="liczbaDniPobytu" name="liczbaDniPobytu" min="1" class="form-control mb-3" />
-    </div>
-
-    <div class="flex-column">
-      <!-- Przycisk Wyszukaj -->
-      <button id="btnWyszukaj" class="btn btn-primary mb-3">Wyszukaj</button>
     </div>
   </div>
 
   <!-- Sekcja na wyniki wyszukiwania -->
-  <div id="wynikiWyszukiwania" class="mt-3">
-    <!-- Tutaj pojawią się wyniki -->
+  <div class="container">
+    <div id="wynikiWyszukiwania" class="mt-3">
+      <!-- Tutaj pojawią się wyniki -->
+    </div>
   </div>
 
   <div class="container">
