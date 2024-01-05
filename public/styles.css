@@ -1,0 +1,307 @@
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+}
+
+#book-button {
+    font-size: 1.7rem;
+    background-color:#2891a8
+}
+
+#logo {
+    width: 2.5rem;
+    height: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+  
+.flex-column {
+    margin-right: 20px; /* lub inna wartość, aby oddzielić kolumny */
+}
+
+  /* Dostosuj ten CSS według potrzeb */
+.btn-toggle-nav input[type="checkbox"] {
+    margin-right: 10px; /* Odstęp między checkboxem a tekstem */
+}
+  
+.btn-toggle-nav label {
+    margin: 0; /* Usuń marginesy, jeśli są niepotrzebne */
+    cursor: pointer; /* Pokazuje, że można kliknąć etykietę */
+}
+
+.pokoj-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Wyśrodkowanie przycisku wertykalnie */
+    padding: 10px 0;
+}
+  
+.pokoj-item:not(:first-child) {
+  border-top: 1px solid #ccc; /* Linia nad elementem zamiast pod */
+}
+  
+.pokoj-item.last-item {
+  border-bottom: none; /* Usunięcie linii dla ostatniego elementu */
+}
+  
+.pokoj-item .pokoj-content {
+  flex-grow: 1; /* Pozwala treści rozciągnąć się na całą dostępną szerokość */
+}
+  
+.pokoj-item .btn-rezerwuj {
+  background-color: #4CAF50; /* Zielony */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+  
+.pokoj-item .btn-rezerwuj:hover {
+  background-color: #45a049;
+}
+
+  /* Style formularza kontaktowego */
+.contact-form {
+  background: #f4f4f4;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #0056b3;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #004494; /* Ciemniejszy niebieski przy najechaniu */
+}
+
+.navbar {
+  padding: 0;
+}
+
+                    /* Tryb jasny/ciemny */
+/* Główne style dla motywu ciemnego */
+body.dark-mode {
+  background-color: #121212; /* Ciemne tło dla całej strony */
+  color: #e0e0e0; /* Jasny tekst dla lepszej czytelności */
+}
+
+body.dark-mode .container-fluid {
+  background-color: #534a5f;
+}
+
+body.dark-mode .navbar-brand {
+  background-color: #534a5f; /* Ciemniejsze tło dla paska nawigacji */
+}
+
+body.dark-mode .collapse {
+  background-color: #534a5f; /* Ciemniejsze tło dla paska nawigacji */
+}
+
+body.dark-mode button:hover {
+  color: #e0e0e0; /* Jasny tekst dla lepszej czytelności */
+}
+
+body.dark-mode a {
+  color: #ffffff; /* Jasny kolor dla linków */
+}
+
+body.dark-mode .feature-icon {
+  background-color: #333; /* Ciemne tło dla ikon funkcji */
+}
+
+
+
+/* Możesz również dodać !important aby upewnić się, że style zostaną zastosowane */
+body.dark-mode .title {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .proffesionalism {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .wide-range {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .low-prices {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .professionalism {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .year {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .home {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .about-us {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .contact-us {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .about-us-section {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .contact-us-section {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .title-about-us {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .our-mission {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .our-vision {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .our-values {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+/* dla "Send Us a Message w contact.html" */
+body.dark-mode .contact-form {
+  background-color: #333; /* Ciemne tło dla ikon funkcji */
+}
+
+body.dark-mode .title-contact-us {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .get-in-touch {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+body.dark-mode .office-hours {
+  color: #ffffff !important; /* Biały tekst */
+}
+
+/* Strona book.html */
+body.dark-mode #btnKontynenty {
+  color: #ffffff !important;
+}
+
+body.dark-mode #btnKraje {
+  color: #ffffff !important;
+}
+
+body.dark-mode #btnMiasta {
+  color: #ffffff !important;
+}
+
+body.dark-mode #btnLiczbaOsob {
+  color: #ffffff !important;
+}
+
+body.dark-mode #home-collapse {
+  background-color: #121212;
+}
+
+body.dark-mode #dashboard-collapse {
+  background-color: #121212;
+}
+
+body.dark-mode #orders-collapse {
+  background-color: #121212;
+}
+
+body.dark-mode #people-collapse {
+  background-color: #121212;
+}
+
+
+body.dark-mode .link-body-emphasis {  /* Ustawienie wyświetlanych rekordów z bazy danych na biało w trybie ciemnym */
+  color: #ffffff !important;
+}
+
+
+body.dark-mode #wynikiWyszukiwania {
+  background-color: #1f1b24; /* Ciemniejsze tło dla sekcji wyników */
+}
+
+.g-signin2 {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Możesz zmienić w zależności od potrzeb layoutu */
+  margin-right: 10px;
+}
+
+.sign-out-button {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Możesz zmienić w zależności od potrzeb layoutu */
+  margin-right: 10px;
+}
+
+/* ZMIANA JĘZYKU */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Możesz zmienić w zależności od potrzeb layoutu */
+  margin-right: 10px;
+}
+
+.language-switcher button {
+  border: none;
+  background: none;
+  padding: 0.5rem;
+}
+
+.language-switcher img {
+  width: 24px; /* Adjust as needed */
+  height: auto;
+}
+
+/* GEOLOKALIZACJA W CONTACT.HTML */
+.geolocation-searcher {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Możesz zmienić w zależności od potrzeb layoutu */
+  margin-right: 10px;
+}
+
+.geolocation-searcher button {
+  border: none;
+  background: none;
+  padding: 0.5rem;
+}
+
+.geolocation-searcher button:hover {
+  background-color: #e0e0e0;
+}
+
+.geolocation-searcher img {
+  width: 24px; /* Adjust as needed */
+  height: auto;
+}
