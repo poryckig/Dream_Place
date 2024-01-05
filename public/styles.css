@@ -1,3 +1,34 @@
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .navbar-expand-lg .navbar-nav {
+    justify-content: center !important;
+    flex-grow: 1 !important;
+    flex-basis: auto !important;
+  }
+  .navbar-expand-lg .navbar-nav .nav-item {
+    margin: 0 5px; /* Provide equal space around the links */
+  }
+  .navbar-expand-lg .g-signin2,
+  .navbar-expand-lg .language-switcher,
+  .navbar-expand-lg #sign-out-button,
+  .navbar-expand-lg .mode {
+    justify-content: center !important;
+    margin-top: 10px !important; 
+    margin-bottom: 10px !important; 
+  }
+  .navbar-expand-lg .navbar-toggler {
+    align-self: center !important; 
+  }
+  .navbar-expand-lg .navbar-brand {
+    justify-content: center !important;
+    margin-right: auto !important; /* Align the brand to the center */
+    margin-left: auto !important;
+  }
+}
+
 .feature-icon {
     width: 4rem;
     height: 4rem;
